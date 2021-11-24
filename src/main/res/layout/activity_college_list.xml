@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.CollegeListActivity">
+
+    <TextView
+        android:id="@+id/college_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="Colleges for BE/Btech"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/college_list_title"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/recycler_view"
+            android:layout_marginBottom="40dp"
+            />
+
+
+    <Button
+        android:id="@+id/btn_change_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:padding="10dp"
+        android:text="Select Course"
+        android:textSize="20sp" />
+
+</RelativeLayout>
